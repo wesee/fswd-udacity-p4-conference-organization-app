@@ -5,9 +5,6 @@
 - [How to run the app locally](#how-to-run-the-app-locally)
 - [How to deploy](#how-to-deploy)
 - [Note] (#note)
-- [Task 1: Design choices response]
-- [Task 3: Additional queries]
-- [Task 3: Query problem] (#task-3:-query-problem)
 
 ## How to run the app locally  
 1. download and install Google App Engine SDK for Python
