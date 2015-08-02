@@ -5,6 +5,9 @@
 - [How to run the app locally](#how-to-run-the-app-locally)
 - [How to deploy](#how-to-deploy)
 - [Note] (#note)
+- [Task 1: Design choices response]
+- [Task 3: Additional queries]
+- [Task 3: Query problem] (#task-3:-query-problem)
 
 ## How to run the app locally  
 1. download and install Google App Engine SDK for Python
@@ -29,5 +32,4 @@ Session entity is implemented as a child of the Conference entity while speaker 
 This query will have two inequality filters and this will cause the "BadRequestError: Only one inequality filter per query is supported. Encountered both startTime and typeOfSession" error.
 One way to solve this is using python code to do the filtering.  I implementing this with python code filtering the property of typeOfSession.  Refer to "getFavoriteSessions" endpoint for implementation.
 
-##Note:
 
