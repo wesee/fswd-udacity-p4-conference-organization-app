@@ -19,18 +19,18 @@
 4. visit udacity-conference-center.appspot.com
 
 ## Task 1: Design choices response
-Session entity is implemented as a child of the Conference entity while speaker as a String in Session entity. All the fields in Session entity are of type String, except duration which is of type Integer and sessionDate of type Date.  
-1. StartTime is of type String in 24 hour notation (this will ease the order of data) where '0830' means 8:30am.
-2. SessionDate is of type String in **Y-m-d** format where '2015-08-20' means August 20, 2015.
-3. Duration is modelled as type Integer to represent the number of minutes of the session.
-4. Session entity has an ancestor link to Conference entity.
+1. Session entity is implemented as a child of the Conference entity while speaker as a String in Session entity. All the fields in Session entity are of type String, except duration which is of type Integer and sessionDate of type Date.
+2. StartTime is of type String in 24 hour notation (this will ease the order of data) where '0830' means 8:30am.
+3. SessionDate is of type String in **Y-m-d** format where '2015-08-20' means August 20, 2015.
+4. Duration is modelled as type Integer to represent the number of minutes of the session.
+5. Session entity has an ancestor link to Conference entity.
 
 ## Task 3: Additional queries
 1. **getSessionsInWishlistByType(sessionType)** - query for all the sessions that the user is interested in by session type
 2. **getSessionsByDate(dateString)** - given a valid date string, return all sessions on this date
 
 ## Task 3: Query problem
-This query will have two inequality filters and this will cause the "BadRequestError: Only one inequality filter per query is supported. Encountered both startTime and typeOfSession" error.
-One way to solve this is using python code to do the filtering.  I implementing this with python code filtering the property of typeOfSession.  Refer to **getFavoriteSessions** endpoint for implementation.
+1. This query will have two inequality filters and this will cause the "BadRequestError: Only one inequality filter per query is supported. Encountered both startTime and typeOfSession" error.
+2. One way to solve this is using python code to do the filtering.  I implementing this with python code filtering the property of typeOfSession.  Refer to **getFavoriteSessions** endpoint for implementation.
 
 
