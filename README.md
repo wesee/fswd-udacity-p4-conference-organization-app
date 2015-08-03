@@ -20,9 +20,9 @@
 
 ## Task 1: Design choices response
 Session entity is implemented as a child of the Conference entity while speaker as a String in Session entity. All the fields in Session entity are of type String, except duration which is of type Integer and sessionDate of type Date.  
-1. StartTime is of type String in 24 hour notation (this will ease the order of data) where '0830' means 8:30am.  
+1. StartTime is of type String in 24 hour notation (this will ease the order of data) where '0830' means 8:30am.
 2. SessionDate is of type String in **Y-m-d** format where '2015-08-20' means August 20, 2015.
-3. Duration is modelled as type Integer to represent the number of minutes of the session.  
+3. Duration is modelled as type Integer to represent the number of minutes of the session.
 4. Session entity has an ancestor link to Conference entity.
 
 ## Task 3: Additional queries
